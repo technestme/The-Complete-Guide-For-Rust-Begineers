@@ -21,3 +21,8 @@ fn set_panic_hook() {
     #[cfg(target_arch = "wasm32")]
     console_error_panic_hook::set_once();
 }
+
+fn set_panic_hook_64() {
+    #[cfg(target_arch = "wasm64")]
+    console_error_panic_hook::set_once();
+}
